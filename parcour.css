@@ -1,0 +1,182 @@
+:root {
+    --main-color: #24305E;
+    --second-color: #EDF5E1;
+    --last-color: #FC4445;
+    }
+  * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        background-color: var(--main-color);
+        color: var(--second-color);
+        ::-webkit-scrollbar {
+            opacity: 0;}
+    }
+
+    /*navbar */
+    nav {
+        display: flex; 
+        justify-content: space-between; 
+        padding: 1.5rem 3rem; 
+        background: var(--main-color); 
+        align-items: center;
+    }
+    
+    nav ul {
+        display: flex; 
+        list-style: none; 
+    }
+    
+    nav li {
+        padding-left: 4rem; 
+    }
+    
+    nav a {
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50%;
+        color: var(--second-color);
+    }
+
+    a i {
+    color: #EDF5E1;
+
+    }
+    i{
+        font-size: 20px;
+    }
+
+    nav a:hover{
+        background: var(--last-color);
+        border-color: black solid 1px;
+    }
+
+    nav h2{
+        letter-spacing: 2px;
+    }
+
+    @media screen and (max-width: 900px) {
+        nav li{
+            padding-left: 1.5rem;
+        }
+        i{ 
+            font-size: 20px;
+        }
+        nav{
+            flex-direction: column-reverse;
+            gap: 15px;
+        }
+        #acceuil{
+            width: 75%;
+        }
+    }
+    
+    /*navbar */
+
+        .scroll-container {
+            width: 100%;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            white-space: nowrap; /* Empêche les éléments de revenir à la ligne */
+        }
+        .scroll-item {
+            width: 100%; /* Largeur de chaque élément */
+            height: fit-content; /* Hauteur de chaque élément */
+            display: inline-block; /* Pour empêcher les éléments de revenir à la ligne */
+            scroll-snap-align: start;
+            margin-right: 10px; /* Marge entre les éléments */
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+    .right i{
+        margin-top: 50px;
+        font-size: 70px;
+    }
+
+    .scroll-item p{
+        margin-top: 50px;
+        margin-bottom: 15%;
+        font-size: 30px;
+    }
+
+    #titre{
+        color: var(--last-color);
+    }
+
+
+    .scroll-item h2{
+        margin-top: 10%;
+        padding: 5px;
+        font-size: 70px;
+    }
+
+    .left i:hover{
+        color: var(--last-color);
+    }
+
+    .right i:hover{
+        color: var(--last-color);
+    }
+
+    .left i{
+        margin-top: 50px;
+        font-size: 70px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .scroll-item h2{
+            font-size: 20px;
+        }
+        .scroll-item p{
+            font-size: 20px;
+        }
+        .right i {
+            font-size: 30px;
+        }
+
+        .left i {
+            font-size: 30px;
+        }
+    }
+
+
+
+    /*tile*/
+    .title{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 20px;
+        width: 60%;
+    }
+
+    .title h2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        height: 50px;
+        font-size: 36px;
+        box-shadow: 0 2px 5px black;
+        border-radius: 50px;
+    }
+
+
+
+    @media screen and (max-width: 1000px){
+        .title h2{
+            height: fit-content;
+            width: fit-content;
+            font-size: 25px;
+        }
+        
+    }
+    
+    /*title*/

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+    <body>
+        <nav>
+            <h2>Roess Matthieu</h2>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="skill.html"><i class="fa-solid fa-bars-progress"></i></a>
+                </li>
+                <li>
+                    <a href="projet.html"><i class="fa-solid fa-code"></i></a>
+                </li>
+                <li>
+                    <a href="parcour.html"><i class="fa-solid fa-road"></i></i></a>
+                </li>
+                <li>
+                    <a href="contact.html"><i class="fa-regular fa-address-card"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="propos">
+            <h2>À PROPOS</h2>
+            <p>Hey, je suis Matthieu, un étudiant en développement passionné par le dévellopement web. Je suis toujours curieux d'apprendre plus sur les nouvelle technologies.
+                Explorez mon portfolio pour découvrir mes projets et mes compétences.</p>
+            <a href="./file/cv.pdf"><i class="fa-solid fa-link"></i> Curriculum Vitae</a>
+        </div>
+        <div class="card">
+            <div class="informations">
+                <img src="img/man.png" alt="avatar">
+                <h1>Roess Matthieu</h1>
+                <h2>Étudiant informatique</h2>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/matthieu-roess-1b6992272/"target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/MatthieuRoess" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" id="email"><i class="fa-solid fa-envelope fa-2x"></i></i></a>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    //on récupère le bouton
+    var aTag = document.getElementById('email');
+    //on regarde s'il est cliqué
+    aTag.addEventListener('click', function(event) {
+        event.preventDefault();
+        var textToCopy = 'matthieuroess1@gmail.com';
+        //on met le texte de la variable dans le presse papier
+        navigator.clipboard.writeText(textToCopy)
+        alert("Copié !");
+        });
+</script>

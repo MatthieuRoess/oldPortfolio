@@ -1,0 +1,260 @@
+:root {
+  --main-color: #24305E;
+  --second-color: #EDF5E1;
+  --last-color: #FC4445;
+}
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--main-color);
+    color: var(--second-color);
+  }
+
+  /*navbar */
+  nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1.5rem 3rem; 
+    background: var(--main-color); 
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 4rem; 
+    
+  }
+  
+  nav a {
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50%;
+    color: var(--second-color);
+  }
+
+  a i {
+  color: #EDF5E1;
+
+  }
+  i{
+    font-size: 20px;
+  }
+
+  nav a:hover{
+    background: var(--last-color);
+    border-color: black solid 1px;
+  }
+
+  nav h2{
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 900px) {
+    nav li{
+      padding-left: 1.5rem;
+    }
+    i{ 
+      font-size: 20px;
+    }
+    nav{
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+  }
+
+  
+  /*navbar */
+
+  /*Skill */
+
+  .fond1{
+    position: relative;
+    height: 20px;
+    width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .fond1{
+      width: 400px;
+    }
+  }
+
+  .rempli1{
+    background-color: var(--last-color);
+    height: 100%;
+    width: 30%;
+    animation: remplissage2 2s ease-in;
+  }
+
+  .texte1{
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 4px;
+    
+  }
+
+  .titre1{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+  .fond2{
+    position: relative;
+    height: 20px;
+    width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .fond2{
+      width: 400px;
+    }
+  }
+
+  .rempli2{
+    background-color: var(--last-color);
+    height: 100%;
+    width: 30%;
+    animation: remplissage2 2s ease-in;
+  }
+
+  .texte2{
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 4px;
+    
+  }
+
+  .titre2{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .fond3{
+    position: relative;
+    height: 20px;
+    width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .fond3{
+      width: 300px;
+    }
+    .fond2{
+      width: 300px;
+    }
+    .fond1{
+      width: 300px;
+    }
+  }
+
+  .rempli3{
+    background-color: var(--last-color);
+    height: 100%;
+    width: 40%;
+    animation: remplissage3 2s ease-in;
+  }
+
+  .texte3{
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 4px;
+    
+  }
+
+  .titre3{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  
+  @keyframes remplissage1 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+  }
+
+  @keyframes remplissage2 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+  }
+
+  @keyframes remplissage3 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+  }
+  /*Skill */
+
+  /*tile*/
+  .title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  .title h2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 50px;
+    font-size: 36px;
+    box-shadow: 0 2px 5px black;
+    border-radius: 50px;
+  }
+  @media screen and (max-width: 1000px){
+    .title h2{
+        height: fit-content;
+        width: fit-content;
+        font-size: 25px;
+    }
+    
+}
+    
+  /*title*/
