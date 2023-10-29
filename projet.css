@@ -15,6 +15,7 @@
     background-color: var(--main-color);
     color: var(--second-color);
     height: 100vh;
+    width: 100vw;
   }
 
   /*navbar */
@@ -141,7 +142,6 @@
     .card-list {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
-
     }
     .card{
       width: 300px;
@@ -192,6 +192,7 @@
         height: fit-content;
         width: fit-content;
         font-size: 25px;
+        padding: 5px;
     }
     
 }

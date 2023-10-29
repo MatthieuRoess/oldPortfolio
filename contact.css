@@ -183,7 +183,7 @@
   }
 
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1220px) {
     .propos{
       width: 100%;
     }
@@ -191,6 +191,7 @@
       height: fit-content;
       width: fit-content;
       font-size: 25px;
+      padding: 5px;
     }
     .propos p{
       font-size: 20px;
