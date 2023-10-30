@@ -16,6 +16,7 @@
     color: var(--second-color);
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
   }
 
   /*navbar */
@@ -85,7 +86,7 @@
   /*card*/
   .cards-list {
     z-index: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
